@@ -6,6 +6,7 @@ import { DiscordConfigService } from './environment/discord-config.service';
 import { AlexModule } from './alexjs/alex.module';
 import { VersionModule } from './version/version.module';
 import { CheckImageModule } from './check-image/check-image.module';
+import { TokenModule } from './token/token.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { CheckImageModule } from './check-image/check-image.module';
     }),
     VersionModule,
     CheckImageModule,
+    TokenModule,
   ],
   providers: [AppService, DiscordConfigService],
 })
